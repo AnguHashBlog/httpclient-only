@@ -1,0 +1,13 @@
+<h1 class="">Latest Blog Posts</h1>
+<div class="cards-wrapper">
+@for (post of blogPosts; track post) {
+  <div class="card">
+    <img src="{{ post.coverImage.url}}" alt="Blog Post Image" >
+    <div class="p-4">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.brief }}</p>
+      <a href="{{ post.slug }}">Read More</a>
+    </div>
+  </div>
+}
+</div>

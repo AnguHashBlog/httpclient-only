@@ -1,0 +1,17 @@
+<div class="card">
+  <article class="bg-white rounded-lg shadow-md overflow-hidden">
+    <img src="{{ post.coverImage.url }}" alt="{{ post.title }}" class="cover-image">
+    <div class="p-6">
+      <h1 class="text-3xl font-bold mb-4">{{ post.title }}</h1>
+      <div class="flex items-center mb-4">
+        <img src="{{ post.author.profilePicture }}" alt="{{ post.author.name }}" class="author-image">
+        <div>
+          <p class="text-gray-600">Written by <span class="font-semibold">{{ post.author.name }}</span></p>
+          <p class="text-gray-600">Published on <span class="font-semibold">{{ post.publishedAt | date }}</span></p>
+        </div>
+      </div>
+      <div class="prose max-w-none" [innerHTML]="post.content.html">
+      </div>
+    </div>
+  </article>
+</div>

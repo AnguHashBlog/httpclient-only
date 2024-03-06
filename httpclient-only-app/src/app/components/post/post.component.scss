@@ -1,0 +1,15 @@
+.card {
+  width: 75vw;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px 5px #3e3e3e56;
+
+  .cover-image {
+    width: 100%;
+  }
+
+  .author-image {
+    width: 3rem;
+  }
+}
