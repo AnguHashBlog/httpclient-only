@@ -3,7 +3,7 @@
 
 ## NOT APPLICABLE FOR THE PROJECT
 
-### This app version is just to show an alternative way of connecting to Hashnode's API using the `HttpClinet` directly without using `ApolloAngular`.
+### This app version is just to show an alternative way of connecting to Hashnode's API using the `HttpClinet` directly without using `Apollo Angular`.
 
 This implementation was suggested in a Hashnode Post. Interestingly enough this post was published just a couple of days after I announced my open-source project devoted to connecting Angular to headless Hashnode Blogs, with all its public code, which Hashnode kindly shared on their Twitter account. 
 
@@ -16,7 +16,8 @@ I tested out their guide and the focus is on using the `HttpClient` directly.
 
 ## Notable Drawbacks of this method 
 compared to the way I have set up the AnguHashBlog apps, all the things that the guide doesn't mention
-- ### When using the HttpClient without ApolloAngular we are sending HTTP requests of type `POST`, and each request requires its own `interface`, in addition to the interfaces we define for the objects we are getting as a response. 
+- ### Changes take longer to show up, I just published a new blog post and it took a while for the post to appear, it did happen eventually but it wasn't the best user experience.
+- ### When using the HttpClient without Apollo Angular we are sending HTTP requests of type `POST`, and each request needs its own `interface`, in addition to the interfaces we define for the objects we are getting as a response. 
 - ### The queries are placed inside the component which may work with a two-component app but with larger apps, it will lead to a lot of repetitive code since each query can only be used only in the component where it's placed.
 
 Few more things that are not clarified in that guide:
@@ -35,7 +36,7 @@ export const appConfig: ApplicationConfig = {
 ng g i
 ```
 
-all `interfaces` are usually consolidated and kept in the `models` folder, they are not called `types`. Can you guess in which other Js Framework they are called types? 😉
+all `interfaces` are usually consolidated and kept in the `models` folder, they are not called `types`. Can you guess in which other JS Framework they are called types? 😉
 - Using a `service` is a better approach than making the http calls directly in the component.
 
 ## Styling & Theming 
