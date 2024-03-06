@@ -35,16 +35,18 @@ export const appConfig: ApplicationConfig = {
 ng g i
 ```
 
-all `interfaces` are usually consolidated and kept in the `models` folder, they are not `types`
+all `interfaces` are usually consolidated and kept in the `models` folder, they are not called `types`. Can you guess in which other Js Framework they are called types? 😉
 - Using a `service` is a better approach than making the http calls directly in the component.
 
-When it comes to styling & theming - I have not implemented a lot to this app since I do not like this method. Some may find it simpler and it is since it only covers a case of a tiny app.
+## Styling & Theming 
 
-## Within a small app or a code snippet - everything works great and there are no concerns.
+I have not implemented a lot of styling to this app since I do not like this method. Some may find it simpler and it is since it only covers a case of a tiny app.
+
+## Within a small app or a code snippet - everything works fine and there are no concerns.
 
 Since the rest of the apps here include a much more complete structure and a ton of added features, this approach is not applicable. 
 
-Still, I am including it in case someone is curious and wants to explore it.
+Still, I am including it in case someone is curious and wants to explore it but it is only for that - exploration.
 
 
 
