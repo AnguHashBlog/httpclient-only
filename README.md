@@ -5,7 +5,7 @@
 
 ### This app version is just to show an alternative way of connecting to Hashnode's API using the `HttpClinet` directly without using `Apollo Angular`.
 
-This implementation was suggested in a Hashnode Post. Interestingly enough this post was published just a couple of days after I announced my open-source project devoted to connecting Angular to headless Hashnode Blogs, with all its public code, which Hashnode kindly shared on their Twitter account. 
+This implementation was suggested in a Hashnode Post. Interestingly enough this post was published just a couple of days after I announced my open-source project devoted to connecting Angular to headless Hashnode Blogs, which Hashnode kindly shared on their Twitter account. 
 
 There was no mention of connecting Angular to Hashnode coming from Hashnode before that, and not a lot of interest in Angular as a whole.
 
