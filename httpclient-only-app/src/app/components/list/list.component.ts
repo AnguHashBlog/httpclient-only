@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-
 import { HttpClient } from '@angular/common/http';
-import { ApiResponseBlogPosts, BlogPost } from '../../models/blog-posts';
+import { ApiResponseBlogPosts, BlogPost } from '../../models/blog-data';
 
 const postsQuery = `
 query {
-  publication(host: "compiler.blog") {
+  publication(host: "hashnode.anguhashblog.com") {
     title
     posts(first: 10) {
       edges {

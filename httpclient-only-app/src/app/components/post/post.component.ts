@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiResponseSinglePost, BlogPostWithContentAndAuthor } from '../../models/blog-posts';
+import { ApiResponseSinglePost, BlogPostWithContentAndAuthor } from '../../models/blog-data';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { DatePipe } from '@angular/common';
 
 const singlePostQuery = `
 query ($slug: String!) {
-  publication(host: "compiler.blog") {
+  publication(host: "hashnode.anguhashblog.com") {
     post(slug: $slug) {
       title
       brief
