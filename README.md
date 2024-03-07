@@ -5,16 +5,18 @@
 
 ### This app version serves as an illustration of an alternative approach for connecting to Hashnode's API, employing the `HttpClient` directly without relying on `Apollo Angular`.
 
-This methodology was proposed in a Hashnode post, intriguingly surfacing shortly after the unveiling of my open-source project dedicated to integrating Angular with headless Hashnode Blogs -  acknowledged and shared by Hashnode on their Twitter account.
+This methodology was proposed in a Hashnode post, surfacing shortly after the unveiling of my open-source project dedicated to integrating Angular with headless Hashnode Blogs - acknowledged and shared by Hashnode on their Twitter account.
 
-Prior to this, Hashnode had shown minimal interest in Angular integration, nevertheless, each pursues its own course in the vast realm of web development.
+Before this, Hashnode had demonstrated limited interest in - Angular, each platform forging its unique path in the expansive landscape of web development. 
+
+I'm pleased that my project has acted as a reminder of Angular's presence, fostering renewed attention and consideration 😊
 
 ## My Focus and Practical Considerations
 
 I tested out their guide and the focus is on using the `HttpClient` directly.
 
 ## Notable Drawbacks of this method 
-compared to the way I have set up the AnguHashBlog apps, and few things that their guide doesn't mention
+compared to the way I have set up the AnguHashBlog apps, and a few things that their guide doesn't mention
 - ### Changes take longer to show up, I just published a new blog post and it took a while for the post to appear, it did happen eventually but it wasn't the best user experience.
 - ### Using `HttpClient` without Apollo Angular works by sending `POST` requests, each requiring its own interface. Combined with the general interfaces needed for the response objects - that's a whole lot of `interfaces`.
 - ### The queries work only if they are placed inside the component which may work with a two-component app but with larger apps, it will lead to a lot of repetitive code since each query can only be used only in the component where it's placed.
@@ -30,12 +32,12 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-- In Angular we use `interfaces` that can be generated using the Angular CLI:
+- In Angular when defining models, we use `interfaces` that can be generated using the Angular CLI:
 ```
 ng g i
 ```
 
-all `interfaces` are usually consolidated and kept in the `models` folder, they are not called `types`. Can you guess in which other JS Framework they are called types? 😉
+all `interfaces` are usually consolidated and kept in the `models` folder, they are not defined as `types`. Can you guess in which other JS Framework they are defined as types? 😉
 - Using a `service` is a better approach than making the http calls directly in the component.
 
 ## Styling & Theming 
